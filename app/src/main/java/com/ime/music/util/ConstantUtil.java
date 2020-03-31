@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class ConstantUtil {
-    static private final String host = "http://srf.kcapp.cn";
+    static private final String host = "http://srf.kugouspace.com";
 //    static private final String host = "http://172.19.10.112";
 //    static private final String port = ":8090";
     static private final String port = "";
@@ -34,7 +34,7 @@ public class ConstantUtil {
     static public final String shareSoftUrl = host + port + "/share/url";
     static public final String checkSoftUrl = host + port + "/version/check?";
 //    static public String softHash = "756829dda53dcc964b7481bbf1a";
-    static public String softHash = "3a783136483fbc7db9e492ad5c7d91b0";
+    static public String softHash = "b8658da3ee4cc451a84e6343a6704fa2";
     static public String softDownloadAddress;
     static public boolean hasNew = false;
     static public String version;
