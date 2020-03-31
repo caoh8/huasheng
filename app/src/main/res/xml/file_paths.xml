@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <cache-path path="Android/data/com.ime.music" name="download"/>
+
+    <cache-path path="." name="download_root"/>
+
+</paths>

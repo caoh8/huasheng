@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/btn_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="30dp"
+        android:text="设置"
+        android:button="@null"
+        android:background="#F9F9F9"
+        android:textSize="17sp"
+        android:textColor="#333333"
+        android:drawableLeft="@drawable/jiantou_zuo_std"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btn_shezhi">
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_help"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingLeft="15dp"-->
+<!--            android:text="帮助"-->
+<!--            android:button="@null"-->
+<!--            android:background="#00000000"-->
+<!--            android:checked="true"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="#333333"-->
+<!--            android:drawableRight="@drawable/jiantou_you"-->
+<!--            android:paddingRight="15dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="帮助与反馈"
+            android:button="@null"
+            android:background="#00000000"
+            android:checked="true"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:drawableRight="@drawable/jiantou_you"
+            android:paddingRight="15dp"
+            />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="分享给朋友"
+            android:button="@null"
+            android:background="#00000000"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:drawableRight="@drawable/jiantou_you"
+            android:paddingRight="15dp"
+            />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="关于"
+            android:button="@null"
+            android:background="#00000000"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:drawableRight="@drawable/jiantou_you"
+            android:paddingRight="15dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_renew_soft"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="更新软件"
+            android:button="@null"
+            android:background="#00000000"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:drawableRight="@drawable/jiantou_you"
+            android:paddingRight="15dp"
+            />
+
+            <TextView
+                android:id="@+id/shezhi_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1.1.0"
+                android:textColor="#999999"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right"
+                android:paddingTop="12dp"
+                android:paddingRight="36dp"/>
+    </FrameLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

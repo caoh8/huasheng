@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:background="@drawable/btn_white3"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:text="如何分享音频"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:text="点击音频播放后，长按“按住说话”"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:background="@drawable/anzhu"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:text="直至播放完成即可发送"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/fachuqu"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/layout_help_ok"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:text="知道了"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_blue50"/>
+
+</LinearLayout>

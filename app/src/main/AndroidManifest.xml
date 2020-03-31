@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ime.music">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.REAL_GET_TASKS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/music"
+        android:label="@string/ime_name"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".LianXiangActivity"
+            android:theme="@style/activityTheme" />
+        <activity android:name=".FloatWindowActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".ShezhiActivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".YinsiActivity"
+            android:process=":webactivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".XieyiActivity"
+            android:process=":webactivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".GuildActivity"
+            android:theme="@null" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:process=":webactivity"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".welcome"
+            android:theme="@style/ThemeWithoutAnim">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="hsime" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".StartSuccess"
+            android:theme="@style/activityTheme" />
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="2FF046F5CF214681A69DB1F2C9936A78" />
+        <meta-data
+            android:name="TD_CHANNEL_ID"
+            android:value="Your_channel_id" />
+
+        <service
+            android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService"> <!-- 用户质量评估Service可以配置在主进程或者单独进程 -->
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.LianXiangService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/lianxiang_config" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ime.music.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

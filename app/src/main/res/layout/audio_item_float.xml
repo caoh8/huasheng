@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:focusable="false"
+    android:clickable="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:focusable="false"
+        android:clickable="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="false"
+            android:clickable="false"
+            >
+
+            <TextView
+                android:id="@+id/audio_item_tv_delay"
+                android:layout_width="20dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="#4466EE"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:focusable="false"
+                android:clickable="false"
+                />
+
+            <com.ime.music.view.PlayItem
+                android:id="@+id/audio_item_tv_file_name"
+                android:layout_width="268dp"
+                android:layout_height="36dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:gravity="center_vertical"
+                android:maxWidth="280dp"
+                android:minWidth="10dp"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:paddingLeft="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/audio_item_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="3'"
+            android:textColor="#9B9B9B"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</LinearLayout>

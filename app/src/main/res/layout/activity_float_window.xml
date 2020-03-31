@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FloatWindowActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="156dp"
+        android:src="@drawable/kaiqi2"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请开启悬浮窗权限"
+        android:layout_marginTop="64dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#101010"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="部分机型有延迟（小于10秒），请稍等"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#9B9B9B"
+        android:textSize="14sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:button="@null"/>
+
+    <Button
+        android:id="@+id/float_window_btn_float"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="#ffffff"
+        android:text="去开启"
+        android:textSize="14sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+</LinearLayout>

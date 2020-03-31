@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="140dp"
+    android:background="@drawable/btn_white3"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:text="提示"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:text="悬浮窗已关闭，可在通知栏再次打开"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/layout_open_ball_ok"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:text="知道了"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_blue50"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/item_underline">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        >
+
+        <com.ime.music.view.PlayItem
+            android:id="@+id/display_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxWidth="265dp"
+            android:textColor="#333333"
+            android:layout_marginRight="16px"
+            android:paddingLeft="15dp"
+            android:text="test"
+            android:textSize="14sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <com.ime.music.share.ButtonShare
+        android:id="@+id/share_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/share_std"
+        android:layout_height="48dp" />
+
+</LinearLayout>

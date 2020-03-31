@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_activity_et"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="7"
+                android:background="@drawable/bg_f92"
+                android:drawableStart="@drawable/search_std"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="搜索数万隐藏歌词、台词音频"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/search_activity_tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:text="取消"
+                android:textColor="#4466EE"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qingchu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/guanbi" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/search_activity_audio_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <LinearLayout
+            android:id="@+id/search_activity_layout_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="暂未收录  "
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/search_activity_tv_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="一键反馈"
+                android:textColor="#4466EE"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/search_activity_web_miss"
+            layout="@layout/web_missing" />
+    </FrameLayout>
+
+</LinearLayout>

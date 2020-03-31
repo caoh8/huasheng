@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LianXiangActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/guanbi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="解锁音频联想"
+        android:textColor="#101010"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="24dp"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="进一步开启权限，即刻拥有数万隐藏音频和智能联想"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginLeft="24dp"/>
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/wuzhangai"/>
+
+    <TextView
+        android:id="@+id/activity_lian_xiang_tv"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="去开启"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:background="@drawable/btn_blue"
+        android:layout_marginTop="80dp"/>
+
+</LinearLayout>

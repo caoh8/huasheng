@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:paddingTop="0dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_startfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="要先启用一下"
+        android:textColor="#4466EE"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingTop="220dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="96dp">
+
+        <TextView
+            android:id="@+id/tv_firststep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一步"
+            android:textColor="#4466EE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_startim"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="启用花生输入法"
+            android:button="@null"
+            android:background="@drawable/btn_blue"
+            android:checked="true"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/tv_secondstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第二步"
+            android:textColor="#4466EE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+    <Button
+        android:id="@+id/btn_setdefault"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="设为默认输入法"
+        android:button="@null"
+        android:background="@drawable/btn_blue"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/setting_loading"
+        android:layout_width="144dp"
+        android:layout_height="92dp"
+        android:background="@drawable/bg_f9"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp">
+        <ProgressBar
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4466EE"
+            android:text="启用中"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</FrameLayout>

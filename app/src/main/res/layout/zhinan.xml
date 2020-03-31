@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="68dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_blue_radiobutton"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="分享音频"
+            android:textColor="@drawable/seletor_textcolor_audio_btn"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="68dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/selector_blue_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="音频联想"
+            android:textColor="@drawable/seletor_textcolor_audio_btn"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/sv_share"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/share_gif2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_weight="9"
+                android:src="@drawable/fenxiang2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sv_lianxiang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:id="@+id/rl_lianxiang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/share_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_weight="9"
+                android:src="@drawable/lianxiang2" />
+
+            <TextView
+                android:id="@+id/tv_zhinan_close_ac"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="点这暂时关闭该功能（持续改进中）"
+                android:textColor="#4466EE"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:text="带我去聊天："
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="88dp"
+                android:drawableLeft="@drawable/weixin_std"
+                android:drawablePadding="8dp"
+                android:gravity="top|center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/qq_std"
+                android:drawablePadding="0dp"
+                android:gravity="top|center_horizontal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

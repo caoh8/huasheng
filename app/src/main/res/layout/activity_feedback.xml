@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/btn_fb_back"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F9F9F9"
+        android:button="@null"
+        android:drawableLeft="@drawable/jiantou_zuo_std"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="30dp"
+        android:text="帮助与反馈"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <WebView
+        android:id="@+id/wv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
